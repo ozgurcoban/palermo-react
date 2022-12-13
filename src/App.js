@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/home/home';
+import Menu from './pages/menu/meny';
+import About from './pages/about/om-palermo';
+import Contact from './pages/contact/kontakt';
+import Error from './pages/error/404';
+
+import { GlobalStyles } from './styles/global';
+import Theme from './styles/theme';
+import { ThemeProvider } from 'styled-components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={Theme}>
+      <GlobalStyles />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path='meny' element={<Menu />} />
+            <Route path='om-palermo' element={<About />} />
+            <Route path='kontakt' element={<Contact />} />
+            <Route path='*' element={<Error />} />
+          </Route>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
