@@ -32,6 +32,11 @@ export const RightContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
+  display: block;
+  /* width: 30rem; */
+  right: 0;
+  position: absolute;
+  top: 10px;
 `;
 
 export const NavbarLinkContainer = styled.div`
@@ -59,8 +64,9 @@ export const NavbarLinkExtended = styled(Link)`
 `;
 
 export const Logo = styled.img`
-  margin: 10px;
+  /* margin: 10px; */
   height: auto;
+  width: 4rem;
 `;
 
 export const OpenLinkButton = styled.button`
