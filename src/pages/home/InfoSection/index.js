@@ -17,20 +17,16 @@ export const InfoSection = () => {
       <Table>
         <TableBody>
           <TableRow>
-            <HeaderCell>Måndag - Torsdag</HeaderCell>
-            <DataCell>16.00 - 22.00</DataCell>
+            <HeaderCell>Måndag</HeaderCell>
+            <DataCell>11.00 - 01.00</DataCell>
           </TableRow>
           <TableRow>
-            <HeaderCell>Fredag</HeaderCell>
-            <DataCell>16.00 - 23.00</DataCell>
-          </TableRow>
-          <TableRow>
-            <HeaderCell>Lördag</HeaderCell>
-            <DataCell>12.00 - 23.00</DataCell>
+            <HeaderCell>Tisdag - Lördag</HeaderCell>
+            <DataCell>11.00 - 03.00</DataCell>
           </TableRow>
           <TableRow>
             <HeaderCell>Söndag</HeaderCell>
-            <DataCell>12.00 - 22.00</DataCell>
+            <DataCell>11.00 - 01.00</DataCell>
           </TableRow>
         </TableBody>
       </Table>
