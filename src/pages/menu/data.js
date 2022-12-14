@@ -317,23 +317,23 @@ const menu = [
       },
       {
         id: 41,
-        name: 'viking kebab (inbakad)',
+        name: 'viking kebab ',
         description:
-          'kebabkött, och efter gräddning: isbergssallad, lök, fefferoni, gurka och kebabsås',
+          'kebabkött, och efter gräddning: isbergssallad, lök, fefferoni, gurka och kebabsås. (inbakad)',
         price: 125,
         takeawayprice: 120,
       },
       {
         id: 42,
-        name: 'super calzone (dubbelinbakad)',
-        description: 'skinka',
+        name: 'super calzone',
+        description: 'skinka, (dubbelinbakad)',
         price: 125,
         takeawayprice: 120,
       },
       {
         id: 43,
-        name: 'super calzone special (dubbelinbakad)',
-        description: 'skinka, räkor och champinjoner',
+        name: 'super calzone special',
+        description: 'skinka, räkor och champinjoner. (dubbelinbakad)',
         price: 125,
         takeawayprice: 120,
       },
@@ -361,7 +361,7 @@ const menu = [
     ],
   },
   {
-    category: 'starters',
+    category: 'förrätter',
     subcategory: 'förrätter',
     description: 'till alla förrätter ingår hembakat bröd & smör',
     categoryid: 3,
@@ -400,7 +400,7 @@ const menu = [
     ],
   },
   {
-    category: 'maincourse',
+    category: 'huvudrätter',
     subcategory: 'varmrätter',
     description: '',
     categoryid: 4,
@@ -409,31 +409,36 @@ const menu = [
       {
         id: 52,
         name: 'filé oskar',
-        desc: 'fläskfilé, rödvinssås, bearnaisesås, stekta grönsaker och pommes frites',
+        description:
+          'fläskfilé, rödvinssås, bearnaisesås, stekta grönsaker och pommes frites',
         price: 179,
       },
       {
         id: 53,
         name: 'oxfilé mignon',
-        desc: 'oxfilé, champinjoner, gorgonzolaost, stekta grönsaker och pommes frites',
+        description:
+          'oxfilé, champinjoner, gorgonzolaost, stekta grönsaker och pommes frites',
         price: 249,
       },
       {
         id: 54,
         name: 'oxfilé medaljong',
-        desc: 'oxfilé, rödvinssås, bearnaisesås, stekta grönsaker och pommes frites',
+        description:
+          'oxfilé, rödvinssås, bearnaisesås, stekta grönsaker och pommes frites',
         price: 249,
       },
       {
         id: 55,
         name: 'hamburgare',
-        desc: 'briochebröd, 180g kott serveras med pommes och 2st dippsaser, bearnaise och ketchup ',
+        description:
+          'briochebröd, 180g kott serveras med pommes och 2st dippsaser, bearnaise och ketchup ',
         price: 149,
       },
       {
         id: 56,
         name: 'halloumiburgare',
-        desc: 'briochebrod, serveras med pommes och 2st dippsaser, bearnaise och ketchup',
+        description:
+          'briochebrod, serveras med pommes och 2st dippsaser, bearnaise och ketchup',
         price: 169,
       },
     ],
@@ -441,7 +446,7 @@ const menu = [
       {
         id: 57,
         name: 'churros',
-        desc: 'serveras med vaniljglass och nutella',
+        description: 'serveras med vaniljglass och nutella',
         price: 79,
       },
     ],
@@ -456,7 +461,7 @@ const menu = [
       {
         id: 58,
         name: 'churros',
-        desc: 'serveras med vaniljglass och nutella',
+        description: 'serveras med vaniljglass och nutella',
         price: 79,
       },
     ],
@@ -471,37 +476,38 @@ const menu = [
       {
         id: 59,
         name: 'spaghetti bolognese',
-        desc: 'den italienska motsvarigheten till spaghetti med köttfärssås',
+        description:
+          'den italienska motsvarigheten till spaghetti med köttfärssås',
         price: 129,
       },
       {
         id: 60,
         name: 'pasta carbonara',
-        desc: '',
+        description: '',
         price: 129,
       },
       {
         id: 61,
         name: 'oxfilé & champinjoner i gorgonzolasås',
-        desc: '',
+        description: '',
         price: 159,
       },
       {
         id: 62,
         name: 'fläskfilé & champinjoner i senapssås',
-        desc: '',
+        description: '',
         price: 149,
       },
       {
         id: 63,
         name: 'smörstekta champinjoner i gorgonzolasås',
-        desc: '',
+        description: '',
         price: 139,
       },
       {
         id: 64,
         name: 'lasagne',
-        desc: '',
+        description: '',
         price: 129,
       },
     ],
@@ -516,19 +522,21 @@ const menu = [
       {
         id: 65,
         name: 'nachotallrik',
-        desc: 'nachochips med köttfärs, smält ost, mild sås och salsa',
+        description: 'nachochips med köttfärs, smält ost, mild sås och salsa',
         price: 125,
       },
       {
         id: 66,
         name: 'kebabtallrik',
-        desc: 'kebabkött, sallad, fefferoni och kebabsås. serveras med pommes frites',
+        description:
+          'kebabkött, sallad, fefferoni och kebabsås. serveras med pommes frites',
         price: 125,
       },
       {
         id: 67,
         name: 'kebabrulle',
-        desc: 'kebabkött, sallad, fefferoni och kebabsås. serveras i bröd',
+        description:
+          'kebabkött, sallad, fefferoni och kebabsås. serveras i bröd',
         price: 105,
       },
     ],
@@ -551,57 +559,67 @@ const menu = [
       {
         id: 68,
         name: 'ost & skinksallad',
-        desc: 'ost, skinka, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
+        description:
+          'ost, skinka, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
         price: 115,
       },
       {
         id: 69,
         name: 'tonfisksallad',
-        desc: 'tonfisk, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
+        description:
+          'tonfisk, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
         price: 115,
       },
       {
         id: 70,
         name: 'vegetarisk sallad',
-        desc: 'ananas, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
+        description:
+          'ananas, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
         price: 115,
       },
       {
         id: 71,
         name: 'räksallad',
-        desc: 'räkor, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
+        description:
+          'räkor, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
         price: 115,
       },
       {
         id: 72,
         name: 'grekisk bondsallad',
-        desc: 'fetaost, isbergssallad, tomater, gurka, paprika, oliver och vinägrettdressing',
+        description:
+          'fetaost, isbergssallad, tomater, gurka, paprika, oliver och vinägrettdressing',
         price: 115,
       },
       {
         id: 73,
         name: 'hawaiiansk sallad',
-        desc: 'räkor, ananas, isbergssallad, tomater, gurka, paprika, oliver och currysås',
+        description:
+          'räkor, ananas, isbergssallad, tomater, gurka, paprika, oliver och currysås',
         price: 115,
       },
       {
         id: 74,
         name: 'västkustsallad',
-        desc: 'räkor, musslor, tonfisk, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
+        description:
+          'räkor, musslor, tonfisk, isbergssallad, tomater, gurka, paprika, oliver och rhode islandsås',
         price: 115,
       },
       {
         id: 75,
         name: 'kycklingsallad',
-        desc: 'kyckling, ananas, isbergssallad, tomater, gurka, paprika',
+        description: 'kyckling, ananas, isbergssallad, tomater, gurka, paprika',
         price: 115,
       },
       {
         id: 76,
         name: 'halloumisallad',
-        desc: 'halloumi, isbergssallad, rödlök, tomater gurka och paprika',
+        description:
+          'halloumi, isbergssallad, rödlök, tomater gurka och paprika',
         price: 115,
       },
     ],
   },
 ];
+
+export default menu;

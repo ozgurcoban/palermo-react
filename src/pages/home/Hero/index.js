@@ -4,7 +4,8 @@ import {
   Image,
   HeroText,
   HeroContainer,
-  Background,
+  Headline,
+  Tagline,
 } from './HeroElements';
 import heroImage from '../../../assets/images/hero-image.jpg';
 
@@ -14,8 +15,8 @@ const Hero = () => {
       <HeroContainer>
         <Image src={heroImage} />
         <HeroText>
-          <h1>Palermo</h1>
-          <h4>när du vill umgås</h4>
+          <Headline>Palermo</Headline>
+          <Tagline>en plats att umgås</Tagline>
         </HeroText>
       </HeroContainer>
     </StyledHero>

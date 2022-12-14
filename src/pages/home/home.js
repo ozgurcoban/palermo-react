@@ -14,7 +14,7 @@ const Home = () => {
 
 const Page = styled.main`
   width: 90vw;
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 1200px;
 `;
 

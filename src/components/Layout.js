@@ -1,10 +1,11 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import React, { useState, useRef } from 'react';
 import Footer from './Footer';
-import NavbarContainer from './NavbarContainer';
+// import NavbarContainer from './NavbarContainer';
+import Navbar from './Navbar';
 import { useOnClickOutside } from '../hooks/useOnClickOutside';
-import Burger from './NavbarContainer/Burger';
-import SideMenu from './NavbarContainer/SideMenu';
+// import Burger from './NavbarContainer/Burger';
+// import SideMenu from './NavbarContainer/SideMenu';
 import styled from 'styled-components';
 
 const Layout = () => {
@@ -13,19 +14,20 @@ const Layout = () => {
   useOnClickOutside(node, () => setOpen(false));
   return (
     <>
-      <Navbar ref={node}>
+      {/* <Navbar ref={node}>
         <NavbarContainer />
         <Burger open={open} setOpen={setOpen} />
         <SideMenu open={open} setOpen={setOpen} />
-      </Navbar>
+      </Navbar> */}
+      <Navbar />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
 
-export const Navbar = styled.nav`
-  height: 6rem;
-`;
+// export const Navbar = styled.nav`
+//   height: 6rem;
+// `;
 
 export default Layout;

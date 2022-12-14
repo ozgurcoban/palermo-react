@@ -1,10 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const StyledHero = styled.header`
-  @media (min-width: ${({ theme }) => theme.sizes.tablet}) {
-    margin: 3rem 0;
-  }
   position: relative;
   z-index: -1;
 `;
@@ -37,5 +33,16 @@ export const HeroText = styled.div`
   transform: translate(-50%, -50%);
   color: ${({ theme }) => theme.primaryLight};
   position: absolute;
-  font-size: 2rem;
+`;
+
+export const Headline = styled.h1`
+  font-size: 3rem;
+  letter-spacing: 4px;
+`;
+
+export const Tagline = styled.h4`
+  font-size: 1.3rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight: 500;
 `;
